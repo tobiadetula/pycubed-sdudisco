@@ -186,7 +186,7 @@ cython_debug/
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #  and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
 
 # Ruff stuff:
 .ruff_cache/
@@ -205,3 +205,69 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# KiCad - Hardware Design Files
+# Backup files
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.kicad_pro-bak
+*-backups/
+*.bak
+*.bck
+*.kicad_pcb.lck
+*.kicad_sch.lck
+
+# KiCad generated files
+*.xml
+fp-info-cache
+*-cache.lib
+*.net
+*.dsn
+*.ses
+*-rescue.lib
+*-rescue.dcm
+
+# KiCad fabrication outputs
+gerber/
+*.zip
+
+# CircuitPython
+# CircuitPython libraries and modules
+lib/
+*.mpy
+.fseventsd/
+.metadata_never_index
+.Trashes
+boot_out.txt
+
+# CircuitPython board-specific
+.Trash-*/
+.fseventsd/
+CIRCUITPY/
+*.UF2
+*.uf2
+
+# User Identifying Information
+# User-specific configuration files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+
+# User credentials and secrets
+*.pem
+*.key
+*.cert
+*.crt
+id_rsa*
+*.pub
+credentials.json
+secrets.py
+settings.toml
+.secrets
+
